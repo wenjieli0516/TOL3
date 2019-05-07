@@ -1,0 +1,400 @@
+@import "reset.css";
+
+[v-cloak] {
+    display:none; !important;
+}
+
+/*Style*/
+html{
+    font-family: Ubuntu, Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.topline{
+    background-color: #50D8E3;
+    height: 25px;
+    display:block;
+}
+
+.nav{
+    color: #50D8E3;
+    margin-top: 17px;
+    margin-left: 75px;
+}
+
+.nav p{
+    font-weight: 350;
+    font-family: Roboto;
+}
+
+h1{
+    font-size: 1.8rem;
+    line-height: 1.8em;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 0.9rem;
+    color: #999;
+    line-height: 1.2em;
+
+}
+
+.mainbody{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 5%;
+    background: #FFFFFF;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,0.25);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    height: 1800px;
+}
+
+.title{
+    background: #50D8E3;
+    width: 100%;
+    padding: 8px 0;
+    /*height: 45px;*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
+}
+
+.index-mainbody{
+    margin-top: 100px;
+}
+
+.index-mainbody h1{
+    font-family: "Ubuntu";
+    font-size: 22px;
+    color: #4A4A4A;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 20px;*/
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.index-mainbody h2{
+    font-family: "Ubuntu";
+    font-size: 18px;
+    color: #4A4A4A;
+    font-weight: 400;
+    line-height: 1.8em;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 30px;
+    width: 70%;
+
+}
+
+
+.mainbody h1{
+    font-size: 22px;
+    font-family: Ubuntu;
+    color: white;
+    font-weight: 500;
+    margin-left:auto;
+    text-align: center;
+}
+
+@keyframes card-appear {
+    0% {margin-top: 150px; opacity: 0;}
+    60% {margin-top: 100px; opacity: .9;}
+    100% {margin-top: 110px; opacity: 1;}
+}
+
+@keyframes option-card-appear {
+    0% {opacity: 0;}
+    70% {opacity: .9;}
+    100% {opacity: 1;}
+
+}
+
+.container-card,
+.option-card,
+.feedback-card-correct,
+.feedback-card-incorrect {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    width: 50%;
+    height: auto;
+    /*padding: 20px 20px;*/
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.05);
+}
+
+
+
+/*.option-card {*/
+    /*height: 100px;*/
+    /*overflow: visible;*/
+    /*text-wrap: normal;*/
+    /*padding: 20px 20px;*/
+    /*border: none;*/
+    /*outline: none;*/
+    /**/
+
+/*}*/
+
+.feedback-card-correct {
+    display: none;
+    background: lightgreen;
+    margin-top: 20px;
+
+}
+
+.feedback-card-incorrect {
+    display: none;
+    background: lightgrey;
+    margin-top: 20px;
+}
+
+
+.container-card {
+    animation: card-appear 1.2s ease-in-out;
+}
+
+.option-card {
+    margin-top: 20px;
+    animation: option-card-appear 1.1s ease-in-out;
+}
+
+.option-card:hover {
+    transform: scale(1.05);
+    /*border: #50D8E3 3px solid;*/
+    transition: all .4s;
+}
+
+.sticky-menu {
+    position: fixed;
+    top: 38em;
+    left: 83%;
+}
+
+#instruction{
+    margin-left: 15%;
+    width: 70%;
+}
+
+#instruction-title{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top:0;
+    margin-bottom: 40px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    background-color: #514F4E;
+    /*background-color: rgba(80, 216, 227, .2);*/
+    width: 100% !important;
+    z-index: -10;
+    /*position: absolute;*/
+}
+
+#instruction-title h1{
+    color: white;
+    font-weight: 450;
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 15%
+}
+
+
+#vertical-line{
+    width:15px;
+    height:12px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #50D8E3;
+    margin-left: 12%;
+    margin-top:85px;
+    float: left;
+}
+
+#instruction h1{
+    color: #4A4A4A;
+    text-align: left;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+#instruction h2{
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: #50D8E3;
+    font-weight: 450;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#instruction p{
+    font-family: Roboto;
+    color: #4A4A4A;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+#proportion{
+    Margin-left: 10%;
+}
+
+em{
+    font-weight: 450;
+}
+
+#watch-video h2{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+#player-container{
+    background-color: #f4f4f4;
+    height: 500px;
+    margin-top: 40px;
+}
+
+section {
+    position: relative;
+}
+
+#player{
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    margin-top: 10px;
+}
+
+iframe{
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+}
+
+/*#title{*/
+    /*margin: 30px 0 20px 0;*/
+/*}*/
+
+#invent1, #invent2, #invent3 {
+    display: none;
+    position: absolute;
+    background: #f4f4f4; /*背景半透明了，为了看到后面的视频*/
+    width: 1000px;
+    height: 520px;
+    margin-top: 10px;
+    padding: 80px 80px 120px 80px;
+}
+
+#invent1 h3,
+#invent2 h3,
+#invent3 h3{
+    padding:20px;
+    font-size:1.6rem;
+    line-height: 1.4em;
+    font-weight:400;
+}
+
+#invent1 input,
+#invent2 input{
+    font-size: 5rem;
+}
+
+#invent1 em,
+#invent2 em{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+#T3{
+    font-size: 2rem;
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom:40px;
+}
+
+#answer1, #answer2{
+    /*display:none;*/
+    /*position:relative;*/
+    margin-top: 130px;
+    margin-left:10px;
+    border-radius: 10px;
+    /*border: 2px #333 solid;*/
+    background-color: gainsboro;
+    width: 400px;
+}
+
+#answer1 p,
+#answer2 p{
+    padding:20px;
+    font-weight:300;
+    font-size:1.1rem;
+    line-height: 1.3em;
+}
+
+.index-mainbody-button{
+    display: block;
+    height: 100px;
+    width: 100%;
+}
+
+.button-container {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.button{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding:15px 40px;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px #50D8E3 solid;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #50D8E3;
+    box-shadow:0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    outline: none;
+}
+
+
+/*#btnq3 button{*/
+    /*margin-top:0;*/
+/*}*/
+
+.button:hover{
+    color: white;
+    background: #50D8E3;
+    transition: all .4s;
+}
+
+#retry-button,
+#next-button {
+    display: none;
+}
+
+.picture img {
+    position:absolute;
+    width: 480px;
+    height: 270px;
+    padding: 10px;
+    margin-left:500px;
+    margin-top:0px;
+}
+
+
